@@ -30,11 +30,27 @@
 </header>
 <main>
     <section class="login">
-        <h2>Prijava</h2>
+        <h2>Izrada računa</h2>
         <form action="" method="post">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="ime" name="ime" required placeholder=" ">
+                    <label for="ime">Ime</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="prezime" name="prezime" required placeholder=" ">
+                    <label for="prezime">Prezime</label>
+                </div>
+            </div>
+
             <div class="input-group">
                 <input type="email" id="email" name="email" required placeholder=" ">
                 <label for="email">Email</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9+ ]{6,15}" required placeholder=" ">
+                <label for="telefon">Broj mobitela</label>
             </div>
 
             <div class="input-group">

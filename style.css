@@ -212,6 +212,87 @@ main section.contact img {
     aspect-ratio: 1/1;
 }
 
+main section.login {
+    background: #fff;
+    padding: 2em;
+}
+
+form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5em;
+    flex: 1;
+}
+
+input {
+    width: calc(100% - 2em);
+    padding: 1em 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    background: none;
+}
+
+input:focus {
+    border-color: #000;
+}
+
+label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1em;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+button {
+    width: calc(100% - 6em);
+    padding: 1em;
+    margin: 0 3em;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #EDEBC0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (width <= 700px) {
     h1 {
         display: flex;
