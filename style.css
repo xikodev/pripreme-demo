@@ -318,6 +318,10 @@ button:hover {
         padding: 1em;
     }
 
+    header h2 {
+        display: none;
+    }
+
     main section {
         width: 100%;
     }
