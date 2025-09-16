@@ -55,13 +55,11 @@ header {
 
 header ul {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2em 1em;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
-
-header li {
-    margin: 0.5em;
 }
 
 header a {
