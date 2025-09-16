@@ -3,7 +3,11 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-image: url("background.jpg");
+    background-color: #fffa;
+    background-blend-mode: lighten;
+    background-repeat: repeat-y;
+    background-size: cover;
     color: #000;
     margin: 0;
     font-family: Verdana, sans-serif;
@@ -44,8 +48,9 @@ hr {
 }
 
 header {
-    padding: 1em;
-    width: calc(100% - 2em);
+    background-color: #fff;
+    padding: 1em 3em;
+    width: calc(100% - 6em);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -129,6 +134,7 @@ section.classes div {
 }
 
 section.classes a {
+    background-color: #fff;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 1em 2em;
@@ -147,16 +153,23 @@ section.stats {
 
 section.stats progress {
     width: 15em;
+    padding: 1.25em;
 }
+
 
 section.aboutus div {
     width: 45%;
+}
+
+section.aboutus p {
+    background-color: #fffa;
 }
 
 section.aboutus img {
     width: 90%;
     height: 90%;
     border: 1px solid #000;
+    background-color: #fff;
 }
 
 section.faq {
@@ -164,6 +177,7 @@ section.faq {
 }
 
 section.faq div {
+    background-color: #fff;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 0.5em 2em;
@@ -185,6 +199,7 @@ section.contact h2 {
 }
 
 section.contact p {
+    background-color: #fffa;
     text-align: center;
     width: 90%;
 }
@@ -194,6 +209,7 @@ section.contact div:not([class=qr]) {
     border-radius: 5px;
     padding: 1em 2em;
     width: calc(50% - 6em);
+    background-color: #fff;
 }
 
 section.contact div:has(div.qr) {
@@ -235,7 +251,7 @@ input {
     border-radius: 5px;
     font-size: 1em;
     outline: none;
-    background: none;
+    background-color: #fff;
 }
 
 input:focus {
@@ -288,6 +304,8 @@ button:hover {
 
     header {
         flex-direction: column;
+        width: calc(100% - 2em);
+        padding: 1em;
     }
 
     main section {
