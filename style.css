@@ -44,8 +44,8 @@ hr {
 }
 
 header {
-    padding: 1em 5%;
-    width: 90%;
+    padding: 1em;
+    width: calc(100% - 2em);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -269,6 +269,7 @@ button {
     padding: 1em;
     margin: 0 3em;
     background: #fff;
+    color: #000;
     border: 1px solid #000;
     border-radius: 5px;
     font-size: 1em;
