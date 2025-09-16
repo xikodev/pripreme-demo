@@ -60,17 +60,17 @@ header ul {
     align-items: center;
 }
 
-header ul li {
+header li {
     margin: 0.5em;
 }
 
-header ul li a {
+header a {
     padding: 0.5em;
     border: 2px solid #000;
     color: #000;
 }
 
-header ul li a:hover {
+header a:hover {
     background-color: #EDEBC0;
 }
 
@@ -110,109 +110,109 @@ main section {
     margin: 2em 0;
 }
 
-main section h2 {
+section h2 {
     text-align: center;
     width: 100%;
 }
 
-main section div {
+section div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main section.classes {
+section.classes {
     gap: 2em;
 }
 
-main section.classes div {
+section.classes div {
     align-items: flex-start;
 }
 
-main section.classes a {
+section.classes a {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 1em 2em;
     width: calc(40% - 6em);
 }
 
-main section.classes a:hover {
+section.classes a:hover {
     background-color: #EDEBC0;
     color: #000;
 }
 
-main section.stats {
+section.stats {
     justify-content: center;
     gap: 3em 10em;
 }
 
-main section.stats progress {
+section.stats progress {
     width: 15em;
 }
 
-main section.aboutus div {
+section.aboutus div {
     width: 45%;
 }
 
-main section.aboutus img {
+section.aboutus img {
     width: 90%;
     height: 90%;
     border: 1px solid #000;
 }
 
-main section.faq {
+section.faq {
     gap: 2em;
 }
 
-main section.faq div {
+section.faq div {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 0.5em 2em;
     width: calc(40% - 6em);
 }
 
-main section.faq a {
+section.faq a {
     text-decoration: underline;
 }
 
-main section.contact {
+section.contact {
     margin: 3em 0 5em;
     height: 70vh;
     gap: 2em;
 }
 
-main section.contact h2 {
+section.contact h2 {
     margin: 2em 0;
 }
 
-main section.contact p {
+section.contact p {
     text-align: center;
     width: 90%;
 }
 
-main section.contact div:not([class=qr]) {
+section.contact div:not([class=qr]) {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 1em 2em;
     width: calc(50% - 6em);
 }
 
-main section.contact div:has(div.qr) {
+section.contact div:has(div.qr) {
     flex-direction: row;
     justify-content: space-between;
 }
 
-main section.contact div.qr {
+section.contact div.qr {
     width: 40%;
 }
 
-main section.contact img {
+section.contact img {
     width: 100%;
     aspect-ratio: 1/1;
 }
 
-main section.login {
+section.login {
     background: #fff;
     padding: 2em;
 }
@@ -223,13 +223,13 @@ form {
     flex-direction: column;
 }
 
-.row {
+div.row {
     display: flex;
     flex-direction: row;
     gap: 2em;
 }
 
-.input-group {
+div.input-group {
     position: relative;
     margin-bottom: 1.5em;
     flex: 1;
@@ -282,17 +282,6 @@ button:hover {
     background: #EDEBC0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media (width <= 700px) {
     h1 {
         display: flex;
@@ -311,38 +300,38 @@ button:hover {
         width: 100%;
     }
 
-    main section.classes {
+    section.classes {
         flex-direction: column;
     }
 
-    main section.classes a {
+    section.classes a {
         width: calc(100% - 4em);
     }
 
-    main section.aboutus {
+    section.aboutus {
         flex-direction: column;
     }
 
-    main section.aboutus div {
+    section.aboutus div {
         width: 100%;
     }
 
-    main section.faq {
+    section.faq {
         flex-direction: column;
     }
 
-    main section.faq div {
+    section.faq div {
         width: calc(100% - 4em);
     }
 
-    main section.contact {
+    section.contact {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: stretch;
         height: auto;
     }
 
-    main section.contact div:not([class=qr]) {
+    section.contact div:not([class=qr]) {
         width: calc(100% - 4em);
     }
 }
