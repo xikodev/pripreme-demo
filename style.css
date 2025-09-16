@@ -21,6 +21,14 @@ ul {
     padding: 0;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 70%;
+}
+
 a {
     color: #000;
     text-decoration: none;
@@ -82,7 +90,7 @@ footer section {
 }
 
 main {
-    margin: 5% 1em 0;
+    margin: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,14 +118,14 @@ main section div {
 }
 
 main section.classes {
-    margin: 2em 0;
     gap: 2em;
 }
 
 main section.classes a {
     border: 1px solid #000;
     border-radius: 5px;
-    padding: 1em 3em;
+    padding: 1em 2em;
+    width: calc(40% - 6em);
 }
 
 main section.classes a:hover {
@@ -134,10 +142,6 @@ main section.stats progress {
     width: 15em;
 }
 
-main section.aboutus {
-    flex-wrap: wrap;
-}
-
 main section.aboutus div {
     width: 45%;
 }
@@ -148,8 +152,66 @@ main section.aboutus img {
     border: 1px solid #000;
 }
 
+main section.faq {
+    gap: 2em;
+}
+
+main section.faq div {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    width: calc(40% - 6em);
+}
+
+main section.faq a {
+    text-decoration: underline;
+}
+
+main section.contact {
+    margin: 3em 0;
+    height: 70vh;
+    gap: 2em;
+}
+
+main section.contact h2 {
+    margin: 2em 0;
+}
+
+main section.contact p {
+    text-align: center;
+    width: 90%;
+}
+
+main section.contact div:not([class=qr]) {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1em 2em;
+    width: calc(50% - 6em);
+}
+
+main section.contact div:has(div.qr) {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main section.contact div.qr {
+    width: 40%;
+}
+
+main section.contact img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
 
 @media (width <= 700px) {
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        width: 100%;
+    }
+
     header {
         flex-direction: column;
     }
@@ -158,11 +220,37 @@ main section.aboutus img {
         width: 100%;
     }
 
+    main section.classes {
+        flex-direction: column;
+    }
+
+    main section.classes a {
+        width: calc(100% - 4em);
+    }
+
     main section.aboutus {
         flex-direction: column;
     }
 
     main section.aboutus div {
         width: 100%;
+    }
+
+    main section.faq {
+        flex-direction: column;
+    }
+
+    main section.faq div {
+        width: calc(100% - 4em);
+    }
+
+    main section.contact {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: stretch;
+    }
+
+    main section.contact div:not([class=qr]) {
+        width: calc(100% - 4em);
     }
 }
